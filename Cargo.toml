@@ -30,7 +30,8 @@ members = [
 
 [workspace.dependencies]
 arrayvec = { version = "0.7.4", default-features = false }
-cortex-m = "0.7.7"
+#cortex-m = "0.7.7"
+cortex-m = { git = "https://github.com/rust-embedded/cortex-m", branch = "master" }
 cortex-m-rt = "0.7.3"
 cortex-m-rtic = "1.1.4"
 critical-section = "1.1.2"
@@ -53,7 +54,8 @@ panic-probe = "0.3.1"
 pio = "0.2.1"
 pio-proc = "0.2.2"
 rp2040-boot2 = "0.3.0"
-rp2040-hal = "0.10.0"
+#rp2040-hal = "0.10.0"
+rp2040-hal = { git = "https://github.com/bartweber/rp-hal/rp2040-hal" }
 st7789 = "0.6.1"
 st7735-lcd = "0.8.1"
 smart-leds = "0.3.0"
